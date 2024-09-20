@@ -1,0 +1,112 @@
+html {
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    background-color: hsl(204, 43%, 93%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .content {
+    display: grid;
+    grid-template-areas: "join join"
+                         "subscription why";
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 200px 250px;
+    box-shadow: 0px 0px 14px 4px rgba(0,0,0,0.1);
+}
+
+.container .content .join {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: join;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.container .content .join .title {
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 10px;
+}
+
+.container .content .join .free {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.container .content .join .description {
+    color: hsl(218, 22%, 67%);
+    max-width: 550px;
+    line-height: 25px
+}
+
+.container .content .subscription {
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(0, 0%, 100%);
+    grid-area: subscription;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-left-radius: 8px;
+}
+
+.container .content .subscription .title,
+.container .content .why .title {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.container .content .subscription .value {
+    padding-bottom: 10px;
+}
+
+.container .content .subscription .price {
+   font-size: 28px; 
+   padding-right: 5px;
+}
+
+.container .content .subscription .description {
+    padding-bottom: 45px;
+}
+
+.container .content .subscription .btn {
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(0, 0%, 100%);
+    padding: 15px;
+    border-style: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3S;
+}
+
+.container .content .subscription .btn:hover {
+    opacity: 0.7;
+}
+
+.container .content .why {
+    background-color: hsl(179, 40%, 58%);
+    color: hsl(0, 0%, 100%);
+    grid-area: why;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-right-radius: 8px;
+}
+
+.container .content .why .list .item {
+    padding: 2px;
+}

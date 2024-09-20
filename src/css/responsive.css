@@ -1,0 +1,23 @@
+@media(max-width: 425px) {
+    .container {
+        display: block;
+    }
+
+    .container .content {
+        background-color: hsl(204, 43%, 93%);
+        grid-template-areas: "join"
+                             "subscription"
+                             "why";
+        grid-template-columns: auto;
+        grid-template-rows: 1fr;
+        padding: 50px 25px;
+    }
+
+    .container .content .subscription {
+        border-bottom-left-radius: 0;
+    }
+
+    .container .content .why {
+        border-bottom-left-radius: 8px;
+    }
+}
